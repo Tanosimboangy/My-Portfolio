@@ -1,0 +1,46 @@
+/* GENERAL RULES */
+body {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* SPECIFIC RULES */
+/* HEADER RULES */
+.header {
+    background-color: blue;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+h1 a {
+    color: white;
+    font-size: 30px;
+}
+
+/* MAIN RULES */
+@media(min-width: 720px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
