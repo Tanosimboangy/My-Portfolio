@@ -3,25 +3,23 @@ import React from "react";
 export default function Header() {
     return (
         <>
-            <header className="header">
-                <h1 className="top_heading">
-                    <img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png" width="50px" />
-                    <a className="top_heading--link" href="my_own_blog">My Own website</a>
-                </h1>
-                <nav className="navigation_container">
-                    <ul>
-                        <li className="navigation_contact">
-                            <a href="./Info">Info</a>
-                        </li>
-                        <li className="navigation_blog">
-                            <a href="./blog">Blog</a>
-                        </li>
-                        <li className="navigation_contact">
-                            <a href="./contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+			<header className="header_container">
+				<h1 className="header_logo"><a href="./jacquit">My Own Website</a></h1>
+				<input type="checkbox" />
+				<nav className="header_navigation">
+					<ul>
+						<li className="header_navigation--contact">
+							<a className="header_navigation--contact_link" href="/contact">contact</a>
+						</li>
+						<li className="header_navigation--portfolio">
+							<a className="header_navigation--portfolio_link" href="portfolio">portfolio</a>
+						</li>
+						<li className="header_navigation--blog">
+							<a className="header_navigation--blog_link" href="blog">Blog</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
         </>
     )
 }
