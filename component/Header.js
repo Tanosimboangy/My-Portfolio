@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Header() {
     return (
-        <>
-			<header className="header_container">
-				<h1 className="header_logo"><a href="./jacquit">My Own Website</a></h1>
-				<svg xmlns="http://www.w3.org/2000/svg" height="24" fill="white" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+		<header>
+			<div className="header_container">
+				<h2 className="header_logo"><a href="./jacquit">My Own Website</a></h2>
+				<svg xmlns="http://www.w3.org/2000/svg" height="30" fill="white" viewBox="0 0 24 24" width="30"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
 				<input type="checkbox" />
 				<nav className="header_navigation">
 					<ul>
@@ -26,7 +26,11 @@ export default function Header() {
 						</li>
 					</ul>
 				</nav>
-			</header>
-        </>
+			</div>
+			<div>
+				<h1>This is my portfolio</h1>
+				<div>I have just learned a little bit about <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/css">CSS</a>, and some part of <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">Javascript</a></div>
+			</div>
+		</header>
     )
 }
