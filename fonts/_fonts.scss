@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Montserrat_thin";
+    src: local(Montserrat), 
+    url(./fonts/Montserrat-Thin.woff2) format("woff2"),
+    url(./fonts/Montserrat-Thin.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Montserrat_bold";
+    src: local(Montserrat), 
+    url(./fonts/Montserrat-SemiBold.woff2) format("woff2"),
+    url(./fonts/Montserrat-SemiBold.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Lora_bold";
+    src: local(Lora), 
+    url(./fonts/Lora-Bold.woff2) format("woff2"), 
+    url(./fonts/Lora-Bold.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Lora";
+    src: local(Lora), 
+    url(./fonts/Lora-Regular.woff2) format("woff2"), 
+    url(./fonts/Lora-Regular.woff) format("woff");
+  }
+  @font-face {
+    font-family: "CrimsonPro";
+    src: local(CrimsonPro), 
+    url(./fonts/CrimsonPro-Regular.woff2) format("woff2"),
+    url(./fonts/CrimsonPro-Regular.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: local(Montserrat), 
+    url(./fonts/Montserrat-Regular.woff2) format("woff2"),
+    url(./fonts/Montserrat-Regular.woff) format("woff");
+  }
+  
