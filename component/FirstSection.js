@@ -4,7 +4,14 @@ export default function FirstSection() {
     return (
         <section>
             <div className="container">
-
+                <div>
+                    <article>
+                        <h3>This is all about HTML and CSS</h3>
+                    </article>
+                    <article>
+                        <h3>This is all about Javascritp</h3>
+                    </article>
+                </div>
             </div>
         </section>
     )
