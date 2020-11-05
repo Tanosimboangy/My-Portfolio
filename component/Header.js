@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
     return (
-		<header>
+		<header className="header">
 			<div className="container">
 				<div className="header_container">
 					<h2 className="header_logo"><a href="./jacquit">My Own Website</a></h2>
@@ -32,10 +32,6 @@ export default function Header() {
 							</li>
 						</ul>
 					</nav>
-				</div>
-				<div>
-					<h1>This is my portfolio</h1>
-					<div>I have just learned a little bit about <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/css">CSS</a>, and some part of <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">Javascript</a></div>
 				</div>
 			</div>
 		</header>
