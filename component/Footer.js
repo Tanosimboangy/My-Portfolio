@@ -14,9 +14,6 @@ export default function Footer() {
                         <li className="footer_naviagtion">
                             <Navigation />
                         </li>
-                        <li className="footer_links">
-                            <FooterLinks />
-                        </li>
                         <ul>
                             <li>skdfjklsdfjlksdjf</li>
                             <li>
@@ -26,6 +23,9 @@ export default function Footer() {
                                 </ul>
                             </li>
                         </ul>
+                        <li className="footer_links">
+                            <FooterLinks />
+                        </li>
                     </ul>
                 </div>
                 <ul className="last_footer_items">
