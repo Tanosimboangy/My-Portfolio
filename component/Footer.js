@@ -14,17 +14,19 @@ export default function Footer() {
                         <li className="footer_naviagtion">
                             <Navigation />
                         </li>
-                        <ul>
-                            <li>skdfjklsdfjlksdjf</li>
-                            <li>
-                                <ul>
-                                    <li>;slkdflkjsdlfk</li>
-                                    <li>s;dlfklksdflkjl</li>
-                                </ul>
-                            </li>
-                        </ul>
                         <li className="footer_links">
                             <FooterLinks />
+                        </li>
+                        <li>
+                            <ul>
+                                <li>skdfjklsdfjlksdjf</li>
+                                <li>
+                                    <ul>
+                                        <li>Built by Jacquit</li>
+                                        <li>Created in 2020</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>

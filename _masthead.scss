@@ -1,23 +1,23 @@
 .masthead {
-    // background-color: ;
     .container {
         h1 {
             margin: 0;
-            font-family: "Montserrat";
             font-size: 50px;
             padding-top: 30px;
             padding-bottom: 20px;
+            font-family: "Lato_bold";
         }
         .paragraph {
-            font-family: "Montserrat";
-            font-style: normal;
             font-weight: 500;
             font-size: 18px;
             line-height: 22px;
             color: #FFFFFF; 
+            font-family: "Lato";
             a {
                 text-decoration: none;
                 color: orangered; 
+                font-family: "Lato_bold";
+                font-weight: 700;
             }
         }
     }

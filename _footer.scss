@@ -1,5 +1,4 @@
 footer {
-    // background-color: #FFFFFF;
     background-color: #00ADEE;
     color: black;
     .container {
@@ -7,20 +6,19 @@ footer {
             margin: 0;
             padding-top: 40px;
             padding-bottom: 15px;
-            font-family: "Montserrat";
             font-size: 30px;
+            font-family: "Lato_bold";
+            font-weight: 700;
         }
         p {
             margin: 0;
-            font-family: "Montserrat";
-            font-style: normal;
             font-weight: 500;
             font-size: 18px;
             line-height: 22px;
+            font-family: "Lato";
         }
         h4 {
-            font-family: "Montserrat";
-            font-style: normal;
+            font-family: "Lato_bold";
             font-weight: 600;
             font-size: 18px;
             line-height: 22px;
@@ -35,6 +33,13 @@ footer {
             }
         }
     }
+    .last_footer_items {
+        text-align: center;
+        font-family: "Lato";
+        font-size: 20px;
+        color: rgb(106, 106, 106);
+        padding-top: 40px;
+    }
 }
 
 @media(min-width: 720px) {
@@ -45,6 +50,19 @@ footer {
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: baseline;
+                li {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: white;
+                }
+                a  {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: white;
+
+
+
+                }
             }
         }
     }
