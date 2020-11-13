@@ -1,6 +1,11 @@
 footer {
-    background-color: #00ADEE;
-    color: black;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    a {
+        font-family: "Lato";
+        color: #ffffff;
+        cursor: pointer;
+    }
     .container {
         h3 {
             margin: 0;
@@ -22,14 +27,27 @@ footer {
             font-weight: 600;
             font-size: 18px;
             line-height: 22px;
-            color: #000000;
             margin: 0;
             padding-top: 25px;
             padding-bottom: 15px;
         }
-        .header_navigation {
-            svg {
-                display: none;
+        .footer_moreInfo {
+            .footer_navigation {
+                .header_navigation {
+                    ul {
+                        li {
+                            a {
+                                font-family: "Lato";
+                                color: #ffffff;
+                                cursor: pointer;
+                            }
+                            svg {
+                                display: none;
+                            }
+
+                        }
+                    }
+                }
             }
         }
     }
@@ -37,7 +55,6 @@ footer {
         text-align: center;
         font-family: "Lato";
         font-size: 20px;
-        color: rgb(106, 106, 106);
         padding-top: 40px;
     }
 }
@@ -53,15 +70,10 @@ footer {
                 li {
                     font-family: "Lato";
                     font-size: 20px;
-                    color: white;
                 }
                 a  {
                     font-family: "Lato";
                     font-size: 20px;
-                    color: white;
-
-
-
                 }
             }
         }

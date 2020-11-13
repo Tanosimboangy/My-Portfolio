@@ -11,7 +11,7 @@ export default function Footer() {
                 <div>
                     <h4>More Inforamtion</h4>
                     <ul className="footer_moreInfo">
-                        <li className="footer_naviagtion">
+                        <li className="footer_navigation">
                             <Navigation />
                         </li>
                         <li className="footer_links">
@@ -19,7 +19,9 @@ export default function Footer() {
                         </li>
                         <li>
                             <ul>
-                                <li>skdfjklsdfjlksdjf</li>
+                                <li>
+                                    <img src="./img/jacquit (2).jpg" alt="this is Jacquit" />
+                                </li>
                                 <li>
                                     <ul>
                                         <li>Built by Jacquit</li>
