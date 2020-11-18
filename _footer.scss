@@ -58,6 +58,7 @@ footer {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                padding-bottom: 30px;
                 .footer_links {
                     font-family: "Lato";
                     font-size: 16px;
@@ -89,7 +90,7 @@ footer {
     }
 }
 
-@media(min-width: 720px) {
+@media(min-width: 500px) {
     footer {
         .container {
             h3 {
@@ -135,6 +136,7 @@ footer {
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: baseline;
+                    padding-bottom: 30px;
                     .footer_links {
                         ul {
                             max-width: 200px;

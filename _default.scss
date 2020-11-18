@@ -26,10 +26,11 @@ body {
         padding: 16px;
     }
 }
+
 @media(min-width: 720px) {
     body {
         .container {
-            max-width: 700px;
+            max-width: 80%;
             margin: auto;
         }
         main {
@@ -39,11 +40,5 @@ body {
         footer {
             padding: 0;
         }
-    }
-}
-@media(min-width: 1114px) {
-    .container {
-        max-width: 1000px;
-        margin: auto;
     }
 }
