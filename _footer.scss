@@ -8,7 +8,6 @@ footer {
     }
     .container {
         h3 {
-            margin: 0;
             padding-top: 40px;
             padding-bottom: 15px;
             font-size: 30px;
@@ -16,35 +15,66 @@ footer {
             font-weight: 700;
         }
         p {
-            margin: 0;
             font-weight: 500;
             font-size: 18px;
             line-height: 22px;
             font-family: "Lato";
+            padding-bottom: 20px;
         }
-        h4 {
-            font-family: "Lato_bold";
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 22px;
-            margin: 0;
-            padding-top: 25px;
-            padding-bottom: 15px;
-        }
-        .footer_moreInfo {
+        div {
             .footer_navigation {
-                .header_navigation {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    li {
+                        padding: 10px;
+                        background-color: orangered;
+                        border-radius: 10px;
+                        width: 60px;
+                        margin-bottom: 10px;
+                        a {
+                            svg {
+                                fill: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div {
+            h4 {
+                font-family: "Lato";
+                font-size: 24px;
+                line-height: 22px;
+                padding-top: 25px;
+                padding-bottom: 15px;
+            }
+            p {
+                padding-bottom: 20px;
+            }
+            .footer_moreInfo {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .footer_links {
+                    font-family: "Lato";
+                    font-size: 16px;
+                    max-width: 400px;
+                    font-style: italic;
+                    padding-bottom: 20px;
                     ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
                         li {
                             a {
-                                font-family: "Lato";
-                                color: #ffffff;
-                                cursor: pointer;
+                                img {
+                                    width: 30px;
+                                    fill: white;
+                                }
                             }
-                            svg {
-                                display: none;
-                            }
-
                         }
                     }
                 }
@@ -62,18 +92,62 @@ footer {
 @media(min-width: 720px) {
     footer {
         .container {
-            .footer_moreInfo {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: baseline;
-                li {
-                    font-family: "Lato";
-                    font-size: 20px;
+            h3 {
+                padding-bottom: 30px;
+                font-size: 45px;
+            }
+            p {
+                padding-bottom: 40px;
+                max-width: 400px;
+            }
+            div {
+                .footer_navigation {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        max-width: 400px;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        li {
+                            padding: 10px;
+                            background-color: orangered;
+                            border-radius: 10px;
+                            width: 60px;
+                            margin-bottom: 10px;
+                            a {
+                                svg {
+                                    fill: rgb(255, 255, 255);
+                                }
+                            }
+                        }
+                    }
                 }
-                a  {
-                    font-family: "Lato";
-                    font-size: 20px;
+            }
+            div {
+                h4 {
+                    font-size: 32px;
+                    line-height: 40px;
+                    padding-top: 40px;
+                    padding-bottom: 30px;
+                }
+                .footer_moreInfo {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    .footer_links {
+                        ul {
+                            max-width: 200px;
+                            li {
+                                a:hover {
+                                    img {
+                                        background-color: chartreuse;
+                                        border-radius: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

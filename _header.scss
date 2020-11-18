@@ -59,6 +59,9 @@
           }
           a:hover {
             font-weight: bold;
+            svg {
+              fill: orangered;
+            }
           }
         }
       }
