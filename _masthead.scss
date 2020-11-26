@@ -1,4 +1,5 @@
 .masthead {
+    padding-bottom: 40px;
     .container {
         h1 {
             margin: 0;
@@ -13,12 +14,21 @@
             line-height: 22px;
             color: #FFFFFF; 
             font-family: "Lato";
+            max-width: 600ppx;
             a {
                 text-decoration: none;
                 color: orangered; 
                 font-family: "Lato_bold";
                 font-weight: 700;
             }
+        }
+    }
+}
+
+@media(min-width: 720px) {
+    .masthead {
+        .container {
+
         }
     }
 }
