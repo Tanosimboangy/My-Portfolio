@@ -1,10 +1,41 @@
 import React from "react";
-import FooterLinks from "./Footer_links";
+// import FooterLinks from "./Footer_links";
 
 export default function Footer() {
     return (
         <footer>
-            <div className="container">
+            <>
+                <div>
+                    <article>
+                        <h3>Lorem is nice</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio reiciendis ab modi eligendi, quibusdam amet quasi laudantium tenetur esse neque fugiat itaque sunt temporibus iste aut eius similique ipsam cumque?</p>
+                        <button>Learn more</button>
+                    </article>
+                    <article>
+                        <h3>Lorem is nice</h3>
+                        <ul>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>name</li>
+                                    <li>Surname</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article></article>
+                </div>
+                <div></div>
+            </>
+        </footer>
+    )
+}
+
+
+/*{
+    <div className="container">
                 <h3>To sumit up</h3>
                 <p>To conclude all about this website, I would like to thank you for allocating some of your time to read through this page</p>
                 <div >
@@ -60,6 +91,4 @@ export default function Footer() {
                     <li>© Jacquit, 2020. All rights reserved.</li>
                 </ul>
             </div>
-        </footer>
-    )
-}
+}*/
