@@ -1,5 +1,4 @@
 import React from "react";
-// import FooterLinks from "./Footer_links";
 
 export default function Footer() {
     return (
