@@ -1,31 +1,26 @@
 {
-	"name": "meme-generator",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "",
-	"license": "ISC",
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"dependencies": {
-		"react": "^16.14.0",
-		"react-dom": "^16.14.0",
-		"react-router-dom": "^5.2.0"
-	},
-	"devDependencies": {
-		"sass": "^1.28.0"
-	}
+  "name": "student-portfolio-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanosimboangy/student-portfolio-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanosimboangy/student-portfolio-template/issues"
+  },
+  "homepage": "https://github.com/Tanosimboangy/student-portfolio-template#readme",
+  "devDependencies": {
+    "sass": "^1.30.0"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }

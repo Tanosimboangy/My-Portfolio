@@ -1,0 +1,98 @@
+[
+    {
+        "img": "https://picsum.photos/id/1/250/150",
+        "html": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "css": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "javascript": "https://developer.mozilla.org/en-US/docs/Web/javascript",
+        "title": "Country Quiz",
+        "description": "React. js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications",
+        "demo": "https://country-quiz-project.netlify.app/",
+        "code": "https://github.com/Tanosimboangy/country-quiz",
+        "id": "1606708578697",
+        "type": "react"
+    },
+    {
+        "img": "https://picsum.photos/id/1/250/150",
+        "html": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "css": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "javascript": "https://developer.mozilla.org/en-US/docs/Web/javascript",
+        "title": "Hit Parade",
+        "description": "React. js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications",
+        "demo": "https://my-hit-parade-project.netlify.app",
+        "code": "https://github.com/Tanosimboangy/hit-parade-react",
+        "id": "1606708578489",
+        "type": "react"
+    },
+    {
+        "img": "https://picsum.photos/id/1/250/150",
+        "html": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "css": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "javascript": "https://developer.mozilla.org/en-US/docs/Web/javascript",
+        "title": "Edie Homepage",
+        "description": "React. js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications",
+        "demo": "https://edit-page.netlify.app",
+        "code": "https://github.com/Tanosimboangy/edie-homepage",
+        "id": "1606708578930",
+        "type": "responsive"
+    },
+    {
+        "img": "https://picsum.photos/id/1/250/150",
+        "html": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "css": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "javascript": "https://developer.mozilla.org/en-US/docs/Web/javascript",
+        "title": "Interior Consultant",
+        "description": "React. js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications",
+        "demo": "https://interior-designer-consultant.netlify.app",
+        "code": "https://github.com/Tanosimboangy/interior-consultant",
+        "id": "1606708578901",
+        "type": "responsive"
+    },
+    {
+        "img": "https://picsum.photos/id/1/250/150",
+        "html": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "css": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "javascript": "https://developer.mozilla.org/en-US/docs/Web/javascript",
+        "title": "Birthday App",
+        "description": "VanillaJS is a name to refer to using plain JavaScript without any additional libraries like jQuery.",
+        "demo": "https://nifty-leakey-0a387b.netlify.app",
+        "code": "https://github.com/Tanosimboangy/birthday-app",
+        "id": "1646708290694",
+        "type": "vanilla"
+    },
+    {
+        "img": "https://picsum.photos/id/1/250/150",
+        "html": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "css": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "javascript": "https://developer.mozilla.org/en-US/docs/Web/javascript",
+        "title": "jacquit",
+        "description": "VanillaJS is a name to refer to using plain JavaScript without any additional libraries like jQuery.",
+        "demo": "",
+        "code": "https://github.com/Tanosimboangy/birthday-app",
+        "id": "1646708290695",
+        "type": "vanilla"
+    },
+    {
+        "img": "https://picsum.photos/id/1/250/150",
+        "html": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "css": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "javascript": "https://developer.mozilla.org/en-US/docs/Web/javascript",
+        "title": "jacquit",
+        "description": "VanillaJS is a name to refer to using plain JavaScript without any additional libraries like jQuery.",
+        "demo": "https://nifty-leakey-0a387b.netlify.app",
+        "code": "https://github.com/Tanosimboangy/birthday-app",
+        "id": "1646708290696",
+        "type": "vanilla"
+    },
+    {
+        "img": "https://picsum.photos/id/1/250/150",
+        "html": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "css": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "javascript": "https://developer.mozilla.org/en-US/docs/Web/javascript",
+        "title": "jacquit",
+        "description": "VanillaJS is a name to refer to using plain JavaScript without any additional libraries like jQuery.",
+        "demo": "https://nifty-leakey-0a387b.netlify.app",
+        "code": "https://github.com/Tanosimboangy/birthday-app",
+        "id": "1646708290697",
+        "type": "vanilla"
+    }
+]
