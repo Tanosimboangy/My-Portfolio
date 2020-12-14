@@ -59,16 +59,13 @@ body {
                             flex-direction: row;
                             align-items: center;
                             flex-wrap: wrap;
-                            svg {
+                            img {
                                 padding-right: 20px;
                             }
                         }
                         a:hover {
                             color: blue;
                             font-weight: 600;
-                            svg {
-                                fill: blue;
-                            }
                         }
                     }
                     .phonenumber_contact {
@@ -77,13 +74,8 @@ body {
                             flex-direction: row;
                             align-items: center;
                             flex-wrap: wrap;
-                            svg {
+                            img {
                                 padding-right: 20px;
-                            }
-                        }
-                        p:hover {
-                            svg {
-                                fill: blue;
                             }
                         }
                     }
