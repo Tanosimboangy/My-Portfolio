@@ -29772,7 +29772,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"components/Header.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"sections/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29780,11 +29780,34 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Header;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function Header() {
+  var _useState = (0, _react.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      showMenu = _useState2[0],
+      setShowMenu = _useState2[1];
+
+  function displayMenu() {
+    setShowMenu(!showMenu);
+  }
+
   return /*#__PURE__*/_react.default.createElement("header", {
     className: "header"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -29794,6 +29817,7 @@ function Header() {
   }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "header_logo"
   }, "My Portfolio"), /*#__PURE__*/_react.default.createElement("svg", {
+    onClick: displayMenu,
     xmlns: "http://www.w3.org/2000/svg",
     height: "30",
     fill: "white",
@@ -29804,9 +29828,7 @@ function Header() {
     fill: "none"
   }), /*#__PURE__*/_react.default.createElement("path", {
     d: "M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-  })), /*#__PURE__*/_react.default.createElement("input", {
-    type: "checkbox"
-  }), /*#__PURE__*/_react.default.createElement("nav", {
+  })), /*#__PURE__*/_react.default.createElement("nav", {
     className: "header_navigation"
   }, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", {
     className: "header_navigation--blog"
@@ -29860,109 +29882,13 @@ function Header() {
     d: "M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
   })))))))));
 }
-},{"react":"node_modules/react/index.js"}],"img/clean_code.jpg":[function(require,module,exports) {
-module.exports = "/clean_code.fc95c19c.jpg";
-},{}],"elements/Blog.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _clean_code = _interopRequireDefault(require("../img/clean_code.jpg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Blog() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "blog_section"
-  }, /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("ul", {
-    className: "blog_heading"
-  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("h2", null, "Coding"), /*#__PURE__*/_react.default.createElement("h3", null, "Organize your CODE")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("img", {
-    className: "best_design",
-    src: _clean_code.default,
-    alt: "best design"
-  })))), /*#__PURE__*/_react.default.createElement("li", {
-    className: "blog_paragraph--lists"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "If you want to write a good code, make it simple as possible to understand as you can and make it clean.")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "https://www.geeksforgeeks.org/7-tips-to-write-clean-and-better-code-in-2020/"
-  }, "More info")))));
-}
-
-var _default = Blog;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","../img/clean_code.jpg":"img/clean_code.jpg"}],"elements/Progress.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Progress() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "progress_container"
-  }, /*#__PURE__*/_react.default.createElement("h2", {
-    className: "progress_heading"
-  }, "FRONT END"), /*#__PURE__*/_react.default.createElement("ul", {
-    className: "progress_lists"
-  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("ul", {
-    className: "progress_elements"
-  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "react"
-  }, "React: ")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("progress", {
-    className: "progress",
-    id: "react",
-    max: "100",
-    value: "50"
-  }, " 50% ")))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("ul", {
-    className: "progress_elements"
-  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "javascript"
-  }, "Javascript: ")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("progress", {
-    className: "progress",
-    id: "javascript",
-    max: "100",
-    value: "40"
-  }, " 40% ")))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("ul", {
-    className: "progress_elements"
-  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "css"
-  }, "CSS: ")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("progress", {
-    className: "progress",
-    id: "css",
-    max: "100",
-    value: "80"
-  }, " 80% ")))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("ul", {
-    className: "progress_elements"
-  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "redux"
-  }, "Redux: ")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("progress", {
-    className: "progress",
-    id: "redux",
-    max: "100",
-    value: "2"
-  }, " 2% "))))), /*#__PURE__*/_react.default.createElement("p", {
-    className: "progress_paragraph"
-  }, "This progress bars show the progress I have made so far. I have made some steps on learning and practicing most of these languages, so I still on the process to thrive and improve my knowledge about programming."));
-}
-
-var _default = Progress;
-exports.default = _default;
 },{"react":"node_modules/react/index.js"}],"img/jacquit.jpg":[function(require,module,exports) {
 module.exports = "/jacquit.c3decd13.jpg";
 },{}],"img/email.svg":[function(require,module,exports) {
 module.exports = "/email.d035182d.svg";
 },{}],"img/phone.svg":[function(require,module,exports) {
 module.exports = "/phone.564ed6d2.svg";
-},{}],"elements/Masthead.js":[function(require,module,exports) {
+},{}],"Components/Masthead.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30072,7 +29998,7 @@ module.exports = [{
   "id": "1646708290694",
   "type": "vanilla"
 }];
-},{}],"elements/Demo.js":[function(require,module,exports) {
+},{}],"Components/Demo.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30175,7 +30101,7 @@ function Demo() {
 
 var _default = Demo;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../data.json":"data.json"}],"components/Main.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../data.json":"data.json"}],"sections/Main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30185,13 +30111,9 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Blog = _interopRequireDefault(require("../elements/Blog"));
+var _Masthead = _interopRequireDefault(require("../Components/Masthead"));
 
-var _Progress = _interopRequireDefault(require("../elements/Progress"));
-
-var _Masthead = _interopRequireDefault(require("../elements/Masthead"));
-
-var _Demo = _interopRequireDefault(require("../elements/Demo"));
+var _Demo = _interopRequireDefault(require("../Components/Demo"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30199,15 +30121,13 @@ function Main() {
   return /*#__PURE__*/_react.default.createElement("main", {
     className: "main"
   }, /*#__PURE__*/_react.default.createElement(_Masthead.default, null), /*#__PURE__*/_react.default.createElement("div", {
-    className: "first_section"
-  }, /*#__PURE__*/_react.default.createElement(_Progress.default, null), /*#__PURE__*/_react.default.createElement(_Blog.default, null)), /*#__PURE__*/_react.default.createElement("div", {
     className: "demo_section"
   }, /*#__PURE__*/_react.default.createElement(_Demo.default, null)));
 }
 
 var _default = Main;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../elements/Blog":"elements/Blog.js","../elements/Progress":"elements/Progress.js","../elements/Masthead":"elements/Masthead.js","../elements/Demo":"elements/Demo.js"}],"components/Footer.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Components/Masthead":"Components/Masthead.js","../Components/Demo":"Components/Demo.js"}],"sections/Footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30234,7 +30154,7 @@ function Footer() {
 
 var _default = Footer;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"components/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30244,11 +30164,11 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Header = _interopRequireDefault(require("./Header"));
+var _Header = _interopRequireDefault(require("./sections/Header"));
 
-var _Main = _interopRequireDefault(require("./Main"));
+var _Main = _interopRequireDefault(require("./sections/Main"));
 
-var _Footer = _interopRequireDefault(require("./Footer"));
+var _Footer = _interopRequireDefault(require("./sections/Footer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30258,19 +30178,19 @@ function App() {
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./Header":"components/Header.js","./Main":"components/Main.js","./Footer":"components/Footer.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./sections/Header":"sections/Header.js","./sections/Main":"sections/Main.js","./sections/Footer":"sections/Footer.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _App = _interopRequireDefault(require("./components/App.js"));
+var _App = _interopRequireDefault(require("./App.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.default, null), document.getElementById("root"));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./components/App.js":"components/App.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./App.js":"App.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30298,7 +30218,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51952" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61316" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

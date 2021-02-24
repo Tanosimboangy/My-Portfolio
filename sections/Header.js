@@ -1,13 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 
 export default function Header() {
+	const [showMenu, setShowMenu] = useState(false);
+	function displayMenu() {
+		setShowMenu(!showMenu)
+	}
     return (
 		<header className="header">
 			<div className="container">
 				<div className="header_container">
 					<h1 className="header_logo">My Portfolio</h1>
-					<svg xmlns="http://www.w3.org/2000/svg" height="30" fill="white" viewBox="0 0 24 24" width="30"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-					<input type="checkbox" />
+					<svg onClick={displayMenu} xmlns="http://www.w3.org/2000/svg" height="30" fill="white" viewBox="0 0 24 24" width="30"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
 					<nav className="header_navigation">
 						<ul>
 							<li className="header_navigation--blog">
