@@ -29798,7 +29798,7 @@ function Header() {
   }, "My Portfolio"), /*#__PURE__*/_react.default.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     height: "30",
-    fill: "white",
+    fill: "blue",
     viewBox: "0 0 24 24",
     width: "30"
   }, /*#__PURE__*/_react.default.createElement("path", {
@@ -29826,7 +29826,12 @@ function Header() {
   }, /*#__PURE__*/_react.default.createElement("a", {
     className: "header_navigation--design_link",
     href: "/design"
-  }, "Design")))))));
+  }, "Design")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "header_navigation--design"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    className: "header_navigation--design_link",
+    href: "/about"
+  }, "About")))))));
 }
 },{"react":"node_modules/react/index.js"}],"img/jacquit.jpg":[function(require,module,exports) {
 module.exports = "/jacquit.c3decd13.jpg";
@@ -30135,7 +30140,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53436" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62716" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

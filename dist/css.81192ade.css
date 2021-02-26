@@ -22,6 +22,7 @@ body {
   margin: 0;
   font-family: "Montserrat_Regular";
   font-style: normal;
+  background: #f5f8fe;
 }
 body ul {
   padding: 0;
@@ -33,7 +34,13 @@ body ul li {
 body a {
   text-decoration: none;
 }
-body h1, body h2, body h3, body h4, body h5, body h6, body p {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p {
   margin: 0;
 }
 body .main {
@@ -61,11 +68,11 @@ body .main {
   }
 }
 .header {
-  background: #2c303a;
   position: relative;
   padding: 0 16px;
   margin-bottom: 60px;
   font-style: normal;
+  box-shadow: 0 0 2px black;
 }
 .header .header_container {
   display: flex;
@@ -73,21 +80,20 @@ body .main {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .header .header_container h1 {
   margin: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-family: "Lato";
-  font-size: 25px;
-  white-space: nowrap;
-  color: white;
-  text-transform: uppercase;
+  color: #06152b;
+  font-family: "Montserrat_Regular";
+  font-weight: 700;
+  font-size: 40px;
   letter-spacing: 1.5px;
 }
 .header .header_container input {
   position: absolute;
-  top: 56px;
+  top: 45px;
   right: 16px;
   width: 24px;
   height: 24px;
@@ -103,10 +109,10 @@ body .main {
   top: 100px;
   left: 0;
   right: 0;
-  background: #2c303a;
+  background-color: #f5f8fe;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 100px;
   transition: 1s;
 }
@@ -116,22 +122,17 @@ body .main {
   padding-top: 20px;
 }
 .header .header_container input:checked ~ .header_navigation ul li a {
-  color: black;
-  font-size: 20px;
   text-decoration: none;
   font-family: "Lato";
-  color: white;
-}
-.header .header_container input:checked ~ .header_navigation ul li a:hover {
-  font-weight: bold;
-  color: blue;
+  font-size: 22px;
+  color: #809fb8;
+  line-height: 36px;
 }
 .header .header_container input:checked ~ .header_navigation ul li:hover {
-  box-shadow: 2px 2px 4px black;
-  border-bottom: 1px solid black;
+  box-shadow: 2px 2px 4px gray;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   .header .header_container {
     max-width: 80%;
     margin: auto;
@@ -139,6 +140,9 @@ body .main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+  .header .header_container h1 {
+    white-space: nowrap;
   }
   .header .header_container input,
 .header .header_container svg {
@@ -168,12 +172,14 @@ body .main {
     padding-top: 0;
   }
   .header .header_container .header_navigation ul li a {
-    font-size: 20px;
-    color: white;
+    text-decoration: none;
+    font-family: "Lato";
+    font-size: 22px;
+    color: #809fb8;
+    line-height: 36px;
   }
   .header .header_container .header_navigation ul li a:hover {
-    font-weight: bold;
-    color: blue;
+    color: #06152b;
   }
   .header .header_container .header_navigation ul li:hover {
     box-shadow: none;

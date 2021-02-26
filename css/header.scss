@@ -1,29 +1,28 @@
 .header {
-    background: #2c303a;
     position: relative;
     padding: 0 16px;
     margin-bottom: 60px;
     font-style: normal;
+    box-shadow: 0 0 2px black;
     .header_container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
+        padding-top: 40px;
+        padding-bottom: 40px;
         h1 {
             margin: 0;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            font-family: "Lato";
-            font-size: 25px;
-            white-space: nowrap;
-            color: white;
-            text-transform: uppercase;
+            color: #06152b;
+            font-family: "Montserrat_Regular";
+            font-weight: 700;
+            font-size: 40px;
             letter-spacing: 1.5px;
         }
         input {
             position: absolute;
-            top: 56px;
+            top: 45px;
             right: 16px;
             width: 24px;
             height: 24px;
@@ -39,10 +38,10 @@
             top: 100px;
             left: 0;
             right: 0;
-            background: #2c303a;
+            background-color: #f5f8fe;
             padding-left: 30px;
             padding-right: 30px;
-            padding-top: 50px;
+            padding-top: 30px;
             padding-bottom: 100px;
             transition: 1s;
             ul {
@@ -51,27 +50,22 @@
                     padding-bottom: 20px;
                     padding-top: 20px;
                     a {
-                        color: black;
-                        font-size: 20px;
                         text-decoration: none;
                         font-family: "Lato";
-                        color: white;
-                    }
-                    a:hover {
-                        font-weight: bold;
-                        color: blue;
+                        font-size: 22px;
+                        color: #809fb8;
+                        line-height: 36px;
                     }
                 }
                 li:hover {
-                    box-shadow: 2px 2px 4px black;
-                    border-bottom: 1px solid black;
+                    box-shadow: 2px 2px 4px gray;
                 }
             }
         }
     }
 }
 
-@media(min-width: 720px) {
+@media(min-width: 800px) {
     .header {
         .header_container {
             max-width: 80%;
@@ -80,6 +74,9 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            h1 {
+                white-space: nowrap;
+            }
             input,
             svg {
                 display: none;
@@ -105,12 +102,14 @@
                         padding-bottom: 0;
                         padding-top: 0;
                         a {
-                            font-size: 20px;
-                            color: white;
+                            text-decoration: none;
+                            font-family: "Lato";
+                            font-size: 22px;
+                            color: #809fb8;
+                            line-height: 36px;
                         }
                         a:hover {
-                            font-weight: bold;
-                            color: blue;
+                            color: #06152b;
                         }
                     }
                     li:hover {
