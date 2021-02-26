@@ -5,9 +5,9 @@ import Demo from "../Components/Demo";
 function Main() {
     return (
         <main className="main">
-            <Masthead />
+            {/* <Masthead /> */}
             <div className="demo_section">
-                <Demo />
+                {/* <Demo /> */}
             </div>
         </main>
     )

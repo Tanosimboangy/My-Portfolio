@@ -61,8 +61,8 @@ body .main {
   }
 }
 .header {
+  background: #2c303a;
   position: relative;
-  background-color: #32067c;
   padding: 16px;
   margin-bottom: 60px;
   font-style: normal;
@@ -70,8 +70,9 @@ body .main {
 .header .header_container {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .header .header_container h1 {
   margin: 0;
@@ -85,7 +86,7 @@ body .main {
 }
 .header .header_container input {
   position: absolute;
-  top: 50px;
+  top: 56px;
   right: 16px;
   width: 24px;
   height: 24px;
@@ -93,69 +94,60 @@ body .main {
 }
 .header .header_container .header_navigation {
   position: absolute;
-  top: 0;
+  top: 100px;
   left: -100%;
-  z-index: 1;
 }
-.header .header_container input:checked ~ nav {
+.header .header_container input:checked ~ .header_navigation {
   position: absolute;
-  top: 130px;
-  left: 0%;
-  background-color: #32067c;
-  width: 100%;
-  height: 300%;
+  top: 100px;
+  left: 0;
+  right: 0;
+  background: #2c303a;
+  background-repeat: no-repeat;
+  color: black;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  transition: 1s;
 }
-.header .header_container input:checked ~ nav ul li {
+.header .header_container input:checked ~ .header_navigation ul li {
+  padding-left: 20px;
   text-align: left;
-  padding-left: 8%;
+  padding-bottom: 40px;
   padding-top: 40px;
 }
-.header .header_container input:checked ~ nav ul li svg {
-  padding-left: 20px;
-  padding-top: 4px;
-  fill: orange;
-}
-.header .header_container input:checked ~ nav ul li a {
-  color: white;
+.header .header_container input:checked ~ .header_navigation ul li a {
+  color: black;
   font-size: 20px;
   text-decoration: none;
   font-family: "Lato";
+  color: white;
 }
-.header .header_container input:checked ~ nav ul li a:hover {
+.header .header_container input:checked ~ .header_navigation ul li a:hover {
   font-weight: bold;
+  color: blue;
 }
-.header .header_container input:checked ~ nav ul li a:hover svg {
-  fill: white;
+.header .header_container input:checked ~ .header_navigation ul li:hover {
+  box-shadow: 2px 2px 4px black;
+  border-bottom: 1px solid black;
 }
 
 @media (min-width: 720px) {
   .header .header_container {
-    max-width: 1080px;
+    max-width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   .header .header_container h1 {
     font-size: 25px;
+    white-space: nowrap;
   }
   .header .header_container svg {
     display: none;
-  }
-  .header .header_container .header_navigation {
-    position: initial;
-  }
-  .header .header_container .header_navigation ul {
-    display: flex;
-    flex-direction: row;
-  }
-  .header .header_container .header_navigation ul li:not(:last-of-type) {
-    padding-right: 50px;
-  }
-  .header .header_container .header_navigation ul li a {
-    color: white;
-    text-transform: capitalize;
-    font-size: 20px;
-  }
-  .header .header_container .header_navigation ul li a:hover {
-    font-weight: bold;
   }
 }
 body .main .masthead_container {

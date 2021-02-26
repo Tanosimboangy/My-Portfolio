@@ -29772,7 +29772,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"sections/Header.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"containers/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29786,28 +29786,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 function Header() {
-  var _useState = (0, _react.useState)(false),
-      _useState2 = _slicedToArray(_useState, 2),
-      showMenu = _useState2[0],
-      setShowMenu = _useState2[1];
-
-  function displayMenu() {
-    setShowMenu(!showMenu);
-  }
-
   return /*#__PURE__*/_react.default.createElement("header", {
     className: "header"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -29817,7 +29796,6 @@ function Header() {
   }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "header_logo"
   }, "My Portfolio"), /*#__PURE__*/_react.default.createElement("svg", {
-    onClick: displayMenu,
     xmlns: "http://www.w3.org/2000/svg",
     height: "30",
     fill: "white",
@@ -29828,59 +29806,27 @@ function Header() {
     fill: "none"
   }), /*#__PURE__*/_react.default.createElement("path", {
     d: "M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-  })), /*#__PURE__*/_react.default.createElement("nav", {
+  })), /*#__PURE__*/_react.default.createElement("input", {
+    className: "open",
+    type: "checkbox"
+  }), /*#__PURE__*/_react.default.createElement("nav", {
     className: "header_navigation"
   }, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", {
     className: "header_navigation--blog"
   }, /*#__PURE__*/_react.default.createElement("a", {
     className: "header_navigation--blog_link",
     href: "blog"
-  }, "Blog", /*#__PURE__*/_react.default.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    enableBackground: "new 0 0 24 24",
-    fill: "blue",
-    height: "24",
-    viewBox: "0 0 24 24",
-    width: "24"
-  }, /*#__PURE__*/_react.default.createElement("g", null, /*#__PURE__*/_react.default.createElement("rect", {
-    fill: "none",
-    height: "24",
-    width: "24"
-  })), /*#__PURE__*/_react.default.createElement("g", null, /*#__PURE__*/_react.default.createElement("g", null, /*#__PURE__*/_react.default.createElement("g", null, /*#__PURE__*/_react.default.createElement("path", {
-    d: "M17.5,4.5c-1.95,0-4.05,0.4-5.5,1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45,4.9,1,6v14.65c0,0.65,0.73,0.45,0.75,0.45 C3.1,20.45,5.05,20,6.5,20c1.95,0,4.05,0.4,5.5,1.5c1.35-0.85,3.8-1.5,5.5-1.5c1.65,0,3.35,0.3,4.75,1.05 C22.66,21.26,23,20.86,23,20.6V6C21.51,4.88,19.37,4.5,17.5,4.5z M21,18.5c-1.1-0.35-2.3-0.5-3.5-0.5c-1.7,0-4.15,0.65-5.5,1.5V8 c1.35-0.85,3.8-1.5,5.5-1.5c1.2,0,2.4,0.15,3.5,0.5V18.5z"
-  }))))))), /*#__PURE__*/_react.default.createElement("li", {
+  }, "Blog")), /*#__PURE__*/_react.default.createElement("li", {
     className: "header_navigation--contact"
   }, /*#__PURE__*/_react.default.createElement("a", {
     className: "header_navigation--contact_link",
     href: "/contact"
-  }, "Contact", /*#__PURE__*/_react.default.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "blue",
-    width: "24"
-  }, /*#__PURE__*/_react.default.createElement("path", {
-    d: "M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/_react.default.createElement("path", {
-    d: "M20 0H4v2h16V0zM4 24h16v-2H4v2zM20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 2.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"
-  })))), /*#__PURE__*/_react.default.createElement("li", {
+  }, "Contact")), /*#__PURE__*/_react.default.createElement("li", {
     className: "header_navigation--design"
   }, /*#__PURE__*/_react.default.createElement("a", {
     className: "header_navigation--design_link",
     href: "/design"
-  }, "Design", /*#__PURE__*/_react.default.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "blue",
-    width: "24"
-  }, /*#__PURE__*/_react.default.createElement("path", {
-    d: "M0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/_react.default.createElement("path", {
-    d: "M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
-  })))))))));
+  }, "Design")))))));
 }
 },{"react":"node_modules/react/index.js"}],"img/jacquit.jpg":[function(require,module,exports) {
 module.exports = "/jacquit.c3decd13.jpg";
@@ -30101,7 +30047,7 @@ function Demo() {
 
 var _default = Demo;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../data.json":"data.json"}],"sections/Main.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../data.json":"data.json"}],"containers/Main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30120,14 +30066,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Main() {
   return /*#__PURE__*/_react.default.createElement("main", {
     className: "main"
-  }, /*#__PURE__*/_react.default.createElement(_Masthead.default, null), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "demo_section"
-  }, /*#__PURE__*/_react.default.createElement(_Demo.default, null)));
+  }));
 }
 
 var _default = Main;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Components/Masthead":"Components/Masthead.js","../Components/Demo":"Components/Demo.js"}],"sections/Footer.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Components/Masthead":"Components/Masthead.js","../Components/Demo":"Components/Demo.js"}],"containers/Footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30164,21 +30110,21 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Header = _interopRequireDefault(require("./sections/Header"));
+var _Header = _interopRequireDefault(require("./containers/Header"));
 
-var _Main = _interopRequireDefault(require("./sections/Main"));
+var _Main = _interopRequireDefault(require("./containers/Main"));
 
-var _Footer = _interopRequireDefault(require("./sections/Footer"));
+var _Footer = _interopRequireDefault(require("./containers/Footer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Main.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Main.default, null));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./sections/Header":"sections/Header.js","./sections/Main":"sections/Main.js","./sections/Footer":"sections/Footer.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./containers/Header":"containers/Header.js","./containers/Main":"containers/Main.js","./containers/Footer":"containers/Footer.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -30218,7 +30164,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61316" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53436" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

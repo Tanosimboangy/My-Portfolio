@@ -1,14 +1,14 @@
 import React from 'react'
-import Header from "./sections/Header";
-import Main from "./sections/Main";
-import Footer from "./sections/Footer";
+import Header from "./containers/Header"
+import Main from "./containers/Main";
+import Footer from "./containers/Footer";
 
 function App() {
     return (
         <>
             <Header />
             <Main />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }
