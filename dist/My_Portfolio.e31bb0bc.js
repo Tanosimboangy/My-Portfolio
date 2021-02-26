@@ -30073,34 +30073,7 @@ function Main() {
 
 var _default = Main;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Components/Masthead":"Components/Masthead.js","../Components/Demo":"Components/Demo.js"}],"containers/Footer.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Footer() {
-  return /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer_container"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Portfolio"), /*#__PURE__*/_react.default.createElement("p", null, "To sum up all about this website, I would like to thank you for allocating some of your time to read through this page."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "wrapper_footer"
-  }, "Should you need more inforamtion, please let me know through my email: ", /*#__PURE__*/_react.default.createElement("a", {
-    className: "footer_email--link",
-    href: "mailto:rak.hajasper@mail.com?"
-  }, "Email", /*#__PURE__*/_react.default.createElement("br", null))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "last_footer_items"
-  }, "Created by Jacquit \xA9 Jacquit, 2020. All rights reserved.")));
-}
-
-var _default = Footer;
-exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Components/Masthead":"Components/Masthead.js","../Components/Demo":"Components/Demo.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30114,8 +30087,6 @@ var _Header = _interopRequireDefault(require("./containers/Header"));
 
 var _Main = _interopRequireDefault(require("./containers/Main"));
 
-var _Footer = _interopRequireDefault(require("./containers/Footer"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
@@ -30124,7 +30095,7 @@ function App() {
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./containers/Header":"containers/Header.js","./containers/Main":"containers/Main.js","./containers/Footer":"containers/Footer.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./containers/Header":"containers/Header.js","./containers/Main":"containers/Main.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));

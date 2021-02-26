@@ -1,7 +1,7 @@
 .header {
     background: #2c303a;
     position: relative;
-    padding: 16px;
+    padding: 0 16px;
     margin-bottom: 60px;
     font-style: normal;
     .header_container {
@@ -15,7 +15,8 @@
             padding-top: 40px;
             padding-bottom: 40px;
             font-family: "Lato";
-            font-size: 20px;
+            font-size: 25px;
+            white-space: nowrap;
             color: white;
             text-transform: uppercase;
             letter-spacing: 1.5px;
@@ -39,19 +40,16 @@
             left: 0;
             right: 0;
             background: #2c303a;
-            background-repeat: no-repeat;
-            color: black;
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-left: 30px;
+            padding-right: 30px;
             padding-top: 50px;
             padding-bottom: 100px;
             transition: 1s;
             ul {
                 li {
                     padding-left: 20px;
-                    text-align: left;
-                    padding-bottom: 40px;
-                    padding-top: 40px;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
                     a {
                         color: black;
                         font-size: 20px;
@@ -82,49 +80,45 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            h1 {
-                font-size: 25px;
-                white-space: nowrap;
-            }
+            input,
             svg {
                 display: none;
             }
-            // .header_navigation {
-            //     display: flex;
-            //     flex-direction: row;
-            //     align-items: center;
-            //     width: 100%;
-            //     height: auto;
-            //     padding-bottom: 0;
-            //     padding-top: 0;
-            //     span {
-            //         display: none;
-            //     }
-            //     ul {
-            //         display: flex;
-            //         flex-direction: row;
-            //         align-items: center;
-            //         margin: 0;
-            //         padding: 0;
-            //         li {
-            //             padding: 0;
-            //             padding-left: 50px;
-            //             a {
-            //                 color: white;
-            //                 text-transform: capitalize;
-            //                 font-size: 20px;
-            //             }
-            //             a:hover {
-            //                 font-weight: bold;
-            //                 color: white;
-            //             }
-            //         }
-            //         li:hover {
-            //             box-shadow: none;
-            //             border-bottom: none;
-            //         }
-            //     }
-            // }
+            .header_navigation {
+                position: initial;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background: none;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        padding-left: 50px;
+                        padding-bottom: 0;
+                        padding-top: 0;
+                        a {
+                            font-size: 20px;
+                            color: white;
+                        }
+                        a:hover {
+                            font-weight: bold;
+                            color: blue;
+                        }
+                    }
+                    li:hover {
+                        box-shadow: none;
+                        border-bottom: none;
+                    }
+                }
+            }
         }
     }
 }

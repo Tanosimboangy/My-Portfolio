@@ -63,7 +63,7 @@ body .main {
 .header {
   background: #2c303a;
   position: relative;
-  padding: 16px;
+  padding: 0 16px;
   margin-bottom: 60px;
   font-style: normal;
 }
@@ -79,7 +79,8 @@ body .main {
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: "Lato";
-  font-size: 20px;
+  font-size: 25px;
+  white-space: nowrap;
   color: white;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -103,19 +104,16 @@ body .main {
   left: 0;
   right: 0;
   background: #2c303a;
-  background-repeat: no-repeat;
-  color: black;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 50px;
   padding-bottom: 100px;
   transition: 1s;
 }
 .header .header_container input:checked ~ .header_navigation ul li {
   padding-left: 20px;
-  text-align: left;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .header .header_container input:checked ~ .header_navigation ul li a {
   color: black;
@@ -142,12 +140,44 @@ body .main {
     align-items: center;
     justify-content: space-between;
   }
-  .header .header_container h1 {
-    font-size: 25px;
-    white-space: nowrap;
-  }
-  .header .header_container svg {
+  .header .header_container input,
+.header .header_container svg {
     display: none;
+  }
+  .header .header_container .header_navigation {
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header .header_container .header_navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .header .header_container .header_navigation ul li {
+    padding-left: 50px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .header .header_container .header_navigation ul li a {
+    font-size: 20px;
+    color: white;
+  }
+  .header .header_container .header_navigation ul li a:hover {
+    font-weight: bold;
+    color: blue;
+  }
+  .header .header_container .header_navigation ul li:hover {
+    box-shadow: none;
+    border-bottom: none;
   }
 }
 body .main .masthead_container {
