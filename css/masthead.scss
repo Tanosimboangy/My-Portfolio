@@ -1,49 +1,51 @@
-.masthead_container {
-    border-radius: 12px;
-    padding: 24px;
-    max-width: 400px;
-    margin: auto;
-    margin-bottom: 40px;
-    .masthead_profile {
-        padding-bottom: 20px;
-        img {
-            max-width: 100%;
-            border-radius: 12px;
-            cursor: pointer;
-        }
-    }
-    .personal_details {
-        .personal_description {
+.masthead {
+    .masthead_container {
+        border-radius: 12px;
+        padding: 24px;
+        max-width: 400px;
+        margin: auto;
+        margin-bottom: 40px;
+        .masthead_profile {
             padding-bottom: 20px;
-            li:first-of-type {
-                h2 {
+            .image_profile {
+                max-width: 80%;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+        .personal_details {
+            .personal_description {
+                padding-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                .name {
                     font-family: "Montserrat_SemiBold";
                     font-weight: 600;
                     font-size: 24px;
                     line-height: 29px;
                     color: #4F4F4F;
                     padding-bottom: 6px;
+                    white-space: nowrap;
+                    text-align: left;
                 }
-            }
-            li:last-of-type {
-                p {
+                .profession {
                     font-family: "Montserrat_Regular";
                     font-weight: 500;
                     font-size: 18px;
                     line-height: 22px;
                     color: #828282;
+                    white-space: nowrap;
+                    text-align: left;
                 }
             }
-        }
-        .personal_contact {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
-            color: #4F4F4F;
-            padding-bottom: 20px;
-            .email_contact {
-                padding-bottom: 6px;
-                a {
+            .personal_contact {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #4F4F4F;
+                padding-bottom: 20px;
+                .email_contact {
+                    padding-bottom: 6px;
                     padding-bottom: 10px;
                     font-family: "Montserrat_SemiBold";
                     font-style: normal;
@@ -59,97 +61,97 @@
                         padding-right: 20px;
                     }
                 }
-                a:hover {
+                .email_contact:hover {
                     color: blue;
                     font-weight: 600;
                 }
-            }
-            .phonenumber_contact {
-                p {
+                .phonenumber_contact {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     flex-wrap: wrap;
+                    cursor: pointer;
                     img {
                         padding-right: 20px;
                     }
                 }
+                .phonenumber_contact:hover {
+                    color: blue;
+                    font-weight: 600;
+                }
             }
         }
-    }
-    .personal_motivation {
-        p {
+        .personal_motivation {
             font-family: "Montserrat_Regular";
             font-weight: 500;
             font-size: 18px;
             line-height: 22px;
             color: #828282;
             max-width: 550px;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
         }
-    }
-    .read_more {
-        outline: none;
-        border: none;
-        cursor: pointer;
-        background-color: blue;
-        padding: 20px 10px;
-        color: white;
-        border-radius: 5px;
-        font-family: "Montserrat_Regular";
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
+        .read_more {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            background-color: blue;
+            padding: 20px 10px;
+            color: white;
+            border-radius: 5px;
+            font-family: "Montserrat_Regular";
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 }
 
 @media(min-width: 720px) {
-    .masthead_container {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        max-width: 100%;
-        .masthead_profile {
-            margin-right: 10%;
-            padding-bottom: 20px;
-            img {
-                max-width: 180px;
-            }
-        }
-        .personal_details {
+    .masthead {
+        .masthead_container {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            justify-content: space-between;
-            .personal_description {
-                padding-bottom: 40px;
-                li:first-of-type {
-                    h2 {
-                        padding-bottom: 6px;
-                    }
-                }
-                li:last-of-type {
-                    p {
-                        color: #828282;
-                    }
-                }
-            }
-            .personal_contact {
+            max-width: 100%;
+            padding: 0;
+            .masthead_profile {
+                margin-right: 10%;
                 padding-bottom: 20px;
-                .email_contact {
-                    a {
-                        padding-bottom: 10px;
+                .image_profile {
+                    max-width: 180px;
+                }
+            }
+            .personal_details {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                .personal_description {
+                    padding-bottom: 40px;
+                    li:first-of-type {
+                        h2 {
+                            padding-bottom: 6px;
+                        }
+                    }
+                    li:last-of-type {
+                        p {
+                            color: #828282;
+                        }
                     }
                 }
-                // .phonenumber_contact {
-                //     p {
-                //     }
-                // }
+                .personal_contact {
+                    padding-bottom: 20px;
+                    .email_contact {
+                        a {
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
             }
-        }
-        .personal_motivation {
-            p {
-                max-width: 100%;
+            .personal_motivation {
+                p {
+                    max-width: 100%;
+                }
             }
         }
     }
