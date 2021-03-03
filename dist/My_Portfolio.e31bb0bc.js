@@ -29857,7 +29857,7 @@ var _phone = _interopRequireDefault(require("../img/phone.svg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Masthead() {
+function Blog() {
   return /*#__PURE__*/_react.default.createElement("header", {
     className: "masthead_container"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -29887,10 +29887,14 @@ function Masthead() {
     alt: "this is my phone number"
   }), " (+261) 344605298")))), /*#__PURE__*/_react.default.createElement("div", {
     className: "personal_motivation"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains."))));
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "personal_motivation--text"
+  }, "Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains.")), /*#__PURE__*/_react.default.createElement("button", {
+    className: "read_more"
+  }, "Do you want to read more")));
 }
 
-var _default = Masthead;
+var _default = Blog;
 exports.default = _default;
 },{"react":"node_modules/react/index.js","../img/jacquit.jpg":"img/jacquit.jpg","../img/email.svg":"img/email.svg","../img/phone.svg":"img/phone.svg"}],"data.json":[function(require,module,exports) {
 module.exports = [{
@@ -30071,7 +30075,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Main() {
   return /*#__PURE__*/_react.default.createElement("main", {
     className: "main"
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement(_Masthead.default, null), /*#__PURE__*/_react.default.createElement("div", {
     className: "demo_section"
   }));
 }
@@ -30140,7 +30144,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62716" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54101" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
