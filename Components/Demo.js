@@ -15,7 +15,7 @@ function Demo() {
     }
 
     return (
-        <>
+        <div className="demo_container">
             <div className="buttons_lists">
                 <h2>Projects</h2>
                 <p>You can click one of these buttons if you want to spend some time to look at some of my projects. Please have a great time.</p>
@@ -47,7 +47,7 @@ function Demo() {
                     )
                 })}
             </div>
-        </>
+        </div>
     )
 }
 

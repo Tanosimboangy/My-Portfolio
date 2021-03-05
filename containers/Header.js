@@ -10,10 +10,10 @@ export default function Header() {
 					<input className="open" type="checkbox"/>
 					<nav className="header_navigation">
 						<ul>
+							<li className="header_navigation--home"><a className="header_navigation--home_link" href="/">Home</a></li>
 							<li className="header_navigation--blog"><a className="header_navigation--blog_link" href="blog">Blog</a></li>
 							<li className="header_navigation--contact"><a className="header_navigation--contact_link" href="/contact">Contact</a></li>
 							<li className="header_navigation--design"><a className="header_navigation--design_link" href="/design">Design</a></li>
-							<li className="header_navigation--design"><a className="header_navigation--design_link" href="/about">About</a></li>
 						</ul>
 					</nav>
 				</div>

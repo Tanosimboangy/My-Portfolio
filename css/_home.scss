@@ -1,0 +1,61 @@
+.container {
+    .home_wrapper {
+        margin-bottom: 50px;
+        padding: 40px;
+        background-color: white;
+        box-shadow: 0 0 8px gray;
+        .my_image {
+            max-width: 300px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 50px;
+        }
+        .my_personal {
+            font-family: "Montserrat_Regular";
+            color: #90a0ac;
+            .title {
+                font-weight: bolder;
+                font-size: 28px;
+                line-height: 34px;
+                margin-bottom: 25px;
+                color: #0b214a;
+                text-transform: uppercase;
+            }
+            p {
+                font-weight: 400;
+                letter-spacing: 0;
+                font-size: 16px;
+                line-height: 26px;
+            }
+            .parg1 {
+                margin-bottom: 20px;
+            }
+            .parg2 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media(min-width: 720px) {
+    .container {
+        .home_wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 6%;
+            flex-wrap: wrap;
+            .my_image {
+                width: 300px;
+                height: auto;
+                margin-right: auto;
+            }
+            .my_personal {
+                max-width: 450px;
+                .title {}
+                p {}
+            }
+        }
+    }
+}
