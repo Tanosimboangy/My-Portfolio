@@ -500,7 +500,7 @@ body .main .main_container {
   background-color: white;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 20px;
@@ -514,10 +514,10 @@ body .main .main_container {
 .menu_container div .title {
   font-size: 22px;
   font-weight: 700;
-  padding-top: 30px;
   font-style: normal;
   margin-bottom: 30px;
   color: white;
+  margin-top: 40px;
 }
 .menu_container div .parg {
   font-size: 16px;
