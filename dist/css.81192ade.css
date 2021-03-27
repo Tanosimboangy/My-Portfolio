@@ -44,6 +44,10 @@ body p {
   margin: 0;
 }
 body .main {
+  background-color: #022144;
+  padding-top: 100px;
+}
+body .main .main_container {
   max-width: 95%;
   margin: auto;
 }
@@ -55,13 +59,12 @@ body .main {
   body .header {
     padding: 0;
   }
-  body .main {
-    max-width: 80%;
-    margin: auto;
+  body .main .main_container {
+    max-width: 1200px;
+    margin: 0 6%;
     padding: 0;
-    padding-top: 16px;
   }
-  body .main .first_section {
+  body .main .main_container .first_section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 20px;
@@ -70,7 +73,6 @@ body .main {
 .header {
   position: relative;
   padding: 0 16px;
-  margin-bottom: 60px;
   font-style: normal;
   box-shadow: 0 0 2px black;
 }
@@ -132,10 +134,10 @@ body .main {
   box-shadow: 2px 2px 4px gray;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 720px) {
   .header .header_container {
-    max-width: 80%;
-    margin: auto;
+    max-width: 1200px;
+    margin: 0 6%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -430,51 +432,48 @@ body .main {
 }
 
 .container .home_wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   padding: 40px;
-  background-color: white;
   box-shadow: 0 0 8px gray;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 .container .home_wrapper .my_image {
   max-width: 300px;
-  border-radius: 10px;
   cursor: pointer;
   margin-bottom: 50px;
 }
+.container .home_wrapper .my_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 .container .home_wrapper .my_personal {
   font-family: "Montserrat_Regular";
-  color: #90a0ac;
 }
 .container .home_wrapper .my_personal .title {
   font-weight: bolder;
   font-size: 28px;
   line-height: 34px;
-  margin-bottom: 25px;
-  color: #0b214a;
+  color: white;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 .container .home_wrapper .my_personal p {
   font-weight: 400;
   letter-spacing: 0;
   font-size: 16px;
   line-height: 26px;
+  color: white;
 }
 .container .home_wrapper .my_personal .parg1 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .container .home_wrapper .my_personal .parg2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 720px) {
-  .container .home_wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 6%;
-    flex-wrap: wrap;
-  }
   .container .home_wrapper .my_image {
     width: 300px;
     height: auto;
@@ -482,6 +481,77 @@ body .main {
   }
   .container .home_wrapper .my_personal {
     max-width: 450px;
+  }
+}
+@media (min-width: 1000px) {
+  .container .home_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6%;
+  }
+}
+.menu_container {
+  padding-bottom: 50px;
+}
+.menu_container div {
+  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  max-width: max-content;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.menu_container div .title {
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 30px;
+  color: white;
+}
+.menu_container div .parg {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  max-width: 300px;
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+.menu_container div a {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  border: 2px solid blue;
+  border-radius: 8px;
+  padding: 16px;
+  color: blue;
+}
+.menu_container div a:hover {
+  color: white;
+  background-color: blue;
+}
+.menu_container div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 10px -2px black;
+}
+
+@media (min-width: 720px) {
+  .menu_container {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu_container div:not(:last-of-type) {
+    margin-right: 20px;
   }
 }
 footer {

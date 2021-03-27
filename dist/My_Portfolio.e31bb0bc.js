@@ -29795,7 +29795,7 @@ function Header() {
     className: "header_container"
   }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "header_logo"
-  }, "My Portfolio"), /*#__PURE__*/_react.default.createElement("svg", {
+  }, "Jacquit"), /*#__PURE__*/_react.default.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     height: "30",
     fill: "blue",
@@ -33777,7 +33777,51 @@ function Demo() {
 
 var _default = Demo;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../data.json":"data.json"}],"img/jacquit.jpg":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../data.json":"data.json"}],"Components/Menu.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Menu() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "menu_container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "blog"
+  }, /*#__PURE__*/_react.default.createElement("h2", {
+    className: "title"
+  }, "My Blog"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "parg"
+  }, "Should you want to read my blog, click here!."), /*#__PURE__*/_react.default.createElement("a", {
+    href: "/blog"
+  }, "My Blog")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "contact"
+  }, /*#__PURE__*/_react.default.createElement("h2", {
+    className: "title"
+  }, "My Contact"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "parg"
+  }, "If you want to contanct me, click here!."), /*#__PURE__*/_react.default.createElement("a", {
+    href: "/contact"
+  }, "My Contact")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "design"
+  }, /*#__PURE__*/_react.default.createElement("h2", {
+    className: "title"
+  }, "My Designs"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "parg"
+  }, "Do you want to see my designs, click here!."), /*#__PURE__*/_react.default.createElement("a", {
+    href: "/design"
+  }, "My Designs")));
+}
+
+var _default = Menu;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"img/jacquit.jpg":[function(require,module,exports) {
 module.exports = "/jacquit.c3decd13.jpg";
 },{}],"Components/home.js":[function(require,module,exports) {
 "use strict";
@@ -33789,6 +33833,8 @@ exports.default = Home;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _Menu = _interopRequireDefault(require("./Menu"));
+
 var _jacquit = _interopRequireDefault(require("../img/jacquit.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -33798,21 +33844,22 @@ function Home() {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "home_wrapper"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "my_image"
   }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "my_image",
     src: _jacquit.default,
     alt: "my_image"
-  }), /*#__PURE__*/_react.default.createElement("div", {
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "my_personal"
   }, /*#__PURE__*/_react.default.createElement("h2", {
     className: "title"
-  }, "About me"), /*#__PURE__*/_react.default.createElement("p", {
+  }, "Hello world"), /*#__PURE__*/_react.default.createElement("p", {
     className: "parg1"
-  }, "My name is jacquit and I'm 23 years old. I'm a student from Madagascar, more specificaly at Onja."), /*#__PURE__*/_react.default.createElement("p", {
+  }, "My name is jacquit and I'm 23 years old. I'm a student from Madagascar. I am learning to be a proffessional front-end-developer."), /*#__PURE__*/_react.default.createElement("p", {
     className: "parg2"
-  }, "I'm writing this blog because I want to share with you some of the great points that I've encountered in my study. Also, I want to get any suggestion from you for the things I still need to improve on this website. So please have a great time to read this the contents."))));
+  }, "I'm very glad to share with you what I have learn. Have a great time to read this page."))), /*#__PURE__*/_react.default.createElement(_Menu.default, null));
 }
-},{"react":"node_modules/react/index.js","../img/jacquit.jpg":"img/jacquit.jpg"}],"containers/Main.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./Menu":"Components/Menu.js","../img/jacquit.jpg":"img/jacquit.jpg"}],"containers/Main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33837,6 +33884,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Main() {
   return /*#__PURE__*/_react.default.createElement("main", {
     className: "main"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "main_container"
   }, /*#__PURE__*/_react.default.createElement(_reactRouter.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouter.Route, {
     exact: true,
     path: "/"
@@ -33846,7 +33895,7 @@ function Main() {
     path: "/contact"
   }, /*#__PURE__*/_react.default.createElement(_Contact.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouter.Route, {
     path: "/design"
-  }, /*#__PURE__*/_react.default.createElement(_Demo.default, null))));
+  }, /*#__PURE__*/_react.default.createElement(_Demo.default, null)))));
 }
 
 var _default = Main;
@@ -34356,7 +34405,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51123" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64382" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

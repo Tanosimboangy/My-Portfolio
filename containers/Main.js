@@ -8,20 +8,22 @@ import Home from "../Components/home";
 function Main() {
     return (
         <main className="main">
-            <Switch>
-                <Route exact path="/">
-                    <Home />
-                </Route>
-                <Route path="/blog">
-                    <Blog />
-                </Route>
-                <Route path="/contact">
-                    <Contact />
-                </Route>
-                <Route path="/design">
-                    <Demo />
-                </Route>
-            </Switch>
+            <div className="main_container">
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route path="/blog">
+                        <Blog />
+                    </Route>
+                    <Route path="/contact">
+                        <Contact />
+                    </Route>
+                    <Route path="/design">
+                        <Demo />
+                    </Route>
+                </Switch>
+            </div>
         </main>
     )
 }

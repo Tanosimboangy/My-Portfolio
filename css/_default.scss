@@ -23,9 +23,12 @@ body {
         margin: 0;
     }
     .main {
-        max-width: 95%;
-        margin: auto;
-        // background-color: #022144;
+        background-color: #022144;
+        padding-top: 100px;
+        .main_container {
+            max-width: 95%;
+            margin: auto;
+        }
     }
 }
 
@@ -36,14 +39,15 @@ body {
             padding: 0;
         }
         .main {
-            max-width: 80%;
-            margin: auto;
-            padding: 0;
-            padding-top: 16px;
-            .first_section {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                margin-bottom: 20px;
+            .main_container {
+                max-width: 1200px;
+                margin: 0 6%;
+                padding: 0;
+                .first_section {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin-bottom: 20px;
+                }
             }
         }
     }

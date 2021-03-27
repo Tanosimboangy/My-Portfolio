@@ -3,18 +3,21 @@ import React from 'react'
 function Menu() {
     return (
         <div className="menu_container">
-            <a className="blog" href="/blog">
+            <div className="blog">
                 <h2 className="title">My Blog</h2>
-                <p >Enjoy your time while reading this page.</p>
-            </a>
-            <a href="/contact">
-                <h2>My contact</h2>
-                <p>Enjoy your time while reading this page.</p>
-            </a>
-            <a href="/design">
-                <h2>My design</h2>
-                <p>Enjoy your time while reading this page.</p>
-            </a>
+                <p className="parg">Should you want to read my blog, click here!.</p>
+                <a href="/blog">My Blog</a>
+            </div>
+            <div className="contact">
+                <h2 className="title">My Contact</h2>
+                <p className="parg">If you want to contanct me, click here!.</p>
+                <a href="/contact">My Contact</a>
+            </div>
+            <div className="design">
+                <h2 className="title">My Designs</h2>
+                <p className="parg">Do you want to see my designs, click here!.</p>
+                <a href="/design">My Designs</a>
+            </div>
         </div>
     )
 }

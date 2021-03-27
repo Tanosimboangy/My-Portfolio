@@ -1,17 +1,21 @@
-import React from 'react'
+import React from 'react';
+import Menu from './Menu';
 import jacquit from "../img/jacquit.jpg";
 
 export default function Home() {
     return (
         <div className="container">
             <div className="home_wrapper">
-                <img className="my_image" src={jacquit} alt="my_image"/>
+                <div className="my_image">
+                    <img src={jacquit} alt="my_image"/>
+                </div>
                 <div className="my_personal">
-                    <h2 className="title">About me</h2>
-                    <p className="parg1">My name is jacquit and I'm 23 years old. I'm a student from Madagascar, more specificaly at Onja.</p>
-                    <p className="parg2">I'm writing this blog because I want to share with you some of the great points that I've encountered in my study. Also, I want to get any suggestion from you for the things I still need to improve on this website. So please have a great time to read this the contents.</p>
+                    <h2 className="title">Hello world</h2>
+                    <p className="parg1">My name is jacquit and I'm 23 years old. I'm a student from Madagascar. I am learning to be a proffessional front-end-developer.</p>
+                    <p className="parg2">I'm very glad to share with you what I have learn. Have a great time to read this page.</p>
                 </div>
             </div>
+            <Menu/>
         </div>
     )
 }
