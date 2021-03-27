@@ -432,7 +432,7 @@ body .main .main_container {
 }
 
 .container .home_wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   padding: 40px;
   box-shadow: 0 0 8px gray;
   display: grid;
@@ -491,7 +491,10 @@ body .main .main_container {
   }
 }
 .menu_container {
-  padding-bottom: 50px;
+  padding-bottom: 150px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 .menu_container div {
   background-color: white;
@@ -506,10 +509,12 @@ body .main .main_container {
   display: grid;
   align-items: center;
   justify-items: center;
+  position: relative;
 }
 .menu_container div .title {
   font-size: 22px;
   font-weight: 700;
+  padding-top: 30px;
   font-style: normal;
   margin-bottom: 30px;
   color: white;
@@ -537,6 +542,16 @@ body .main .main_container {
   color: white;
   background-color: blue;
 }
+.menu_container div img {
+  position: absolute;
+  top: -39px;
+  left: calc(50% - 40px);
+  padding: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: auto;
+  background-color: orange;
+}
 .menu_container div:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 10px -2px black;
@@ -544,7 +559,6 @@ body .main .main_container {
 
 @media (min-width: 720px) {
   .menu_container {
-    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;

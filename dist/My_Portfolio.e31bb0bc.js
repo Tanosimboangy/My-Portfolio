@@ -33777,7 +33777,13 @@ function Demo() {
 
 var _default = Demo;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../data.json":"data.json"}],"Components/Menu.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../data.json":"data.json"}],"img/blog.png":[function(require,module,exports) {
+module.exports = "/blog.db400a33.png";
+},{}],"img/contact.png":[function(require,module,exports) {
+module.exports = "/contact.dfb8cfa0.png";
+},{}],"img/desing.png":[function(require,module,exports) {
+module.exports = "/desing.6e2ea3ff.png";
+},{}],"Components/Menu.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33786,6 +33792,12 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+var _blog = _interopRequireDefault(require("../img/blog.png"));
+
+var _contact = _interopRequireDefault(require("../img/contact.png"));
+
+var _desing = _interopRequireDefault(require("../img/desing.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33800,7 +33812,10 @@ function Menu() {
     className: "parg"
   }, "Should you want to read my blog, click here!."), /*#__PURE__*/_react.default.createElement("a", {
     href: "/blog"
-  }, "My Blog")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "My Blog"), /*#__PURE__*/_react.default.createElement("img", {
+    src: _blog.default,
+    alt: "blog"
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "contact"
   }, /*#__PURE__*/_react.default.createElement("h2", {
     className: "title"
@@ -33808,7 +33823,10 @@ function Menu() {
     className: "parg"
   }, "If you want to contanct me, click here!."), /*#__PURE__*/_react.default.createElement("a", {
     href: "/contact"
-  }, "My Contact")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "My Contact"), /*#__PURE__*/_react.default.createElement("img", {
+    src: _contact.default,
+    alt: "contact"
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "design"
   }, /*#__PURE__*/_react.default.createElement("h2", {
     className: "title"
@@ -33816,12 +33834,15 @@ function Menu() {
     className: "parg"
   }, "Do you want to see my designs, click here!."), /*#__PURE__*/_react.default.createElement("a", {
     href: "/design"
-  }, "My Designs")));
+  }, "My Designs"), /*#__PURE__*/_react.default.createElement("img", {
+    src: _desing.default,
+    alt: "desing"
+  })));
 }
 
 var _default = Menu;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"img/jacquit.jpg":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../img/blog.png":"img/blog.png","../img/contact.png":"img/contact.png","../img/desing.png":"img/desing.png"}],"img/jacquit.jpg":[function(require,module,exports) {
 module.exports = "/jacquit.c3decd13.jpg";
 },{}],"Components/home.js":[function(require,module,exports) {
 "use strict";
@@ -34405,7 +34426,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64382" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52265" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
